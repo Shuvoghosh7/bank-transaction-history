@@ -5,6 +5,7 @@ import Home from './component/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './component/Navbar/Header';
+import ALLTransition from './component/ALLTransition/ALLTransition';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/transition' element={<ALLTransition/>}/>
       </Routes>
       
     </div>
