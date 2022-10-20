@@ -14,9 +14,9 @@ const Deposit = () => {
             .then(data => console.log(data))
     }
     return (
-        <div className='mx-auto w-25 mt-5'>
-            <form onSubmit={handleSubmit(onSubmit)} className="bg-light mx-auto">
-                <div className="form-control w-100 mx-auto">
+        <div className="bg-base-100 mx-auto lg:w-[400px]">
+            <form onSubmit={handleSubmit(onSubmit)} className="bg-base-100 mx-auto p-5">
+                <div className="form-control w-full mx-auto">
                     <label className="label">
                         <span className="label-text">User Name</span>
                     </label>
@@ -89,8 +89,8 @@ const Deposit = () => {
                     />
                 </div>
 
-                <div className="form-control w-100 mx-auto">
-                    <input className='w-100' type="submit" value="Deposit" />
+                <div className="modal-action w-full mx-auto m-5">
+                    <input className='btn btn-accent text-white w-full' type="submit" value="Deposit" />
                 </div>
             </form>
         </div>
